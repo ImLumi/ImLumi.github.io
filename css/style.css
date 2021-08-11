@@ -1,0 +1,31 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
+html{
+    font-family: "Marck Script";
+    background-image: url(../img/food.png);
+    background-position: center top;
+
+}
+h1 {
+    color: blue;
+    ;
+}
+h2{
+    color: blue
+}
+
+img{
+    width: 200px;
+    
+}
+.ListStyle {
+    font-size: 22px;
+    font-weight: 500;
+    color: springgreen;
+    max-width: 50%;
+    
+}
+.UlS{
+    color:rgb(179, 13, 13);
+    
+}
