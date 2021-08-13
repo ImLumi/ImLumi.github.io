@@ -23,9 +23,35 @@ img{
     font-weight: 500;
     color: springgreen;
     max-width: 50%;
+    text-decoration: none;
     
 }
+
 .UlS{
     color:rgb(179, 13, 13);
+    text-decoration: none;
     
+}
+.ul a{
+    font-size: 22px;
+    font-weight: 500;
+    color: springgreen;
+    max-width: 50%;
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+}
+a[visited]{
+    text-decoration: underline;
+}
+table{
+    background-color: #f0f0f0;
+    text-align: center;
+}
+table tfoot{
+    text-align: left;
+}
+body{
+    background-color: transparent;
 }
