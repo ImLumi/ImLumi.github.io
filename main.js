@@ -2,7 +2,7 @@ function calcAmount() {
     let price = 1000;
     let amountInput = document.querySelector("input[name='amount-input']");
     let showAmount = document.querySelector("span.show-amount");
-    let amountNumber = isNaN(parseInt(amountInput.value)) ? 0 : parseInt(amountInput.value)  ;
+    let amountNumber = isNaN(parseInt(amountInput.value)) ? 0 : parseInt(amountInput.value);
     let amount = amountNumber * price;
 
     if (amountNumber > 10) {
