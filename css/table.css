@@ -1,7 +1,24 @@
+
 .btnTD{
     text-align: right;
 
 }
 input{
     width: 100%
+}
+#id{
+    width: 10%;
+    text-align: center;
+}
+#surname{
+    width: 25%
+}
+#lastname{
+    width: 25%
+}
+#age{
+    width: 10%
+}
+.addButton{
+    text-align: right;
 }
