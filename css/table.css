@@ -19,6 +19,16 @@ input{
 #age{
     width: 10%
 }
-.addButton{
+td[name='addButton']{
     text-align: right;
+}
+td[name='modifyButton']{
+    text-align: right;
+}
+
+td[name='addButton'] button{
+width: 82px;
+}
+.container{
+    margin: 0px,0px,0px,0px;
 }

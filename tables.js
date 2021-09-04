@@ -1,28 +1,3 @@
-/* <tr>
-    <td>1</td>
-    <td>Kiss</td>
-    <td>János</td>
-    <td>55</td>
-    <td>
-        <div class="btn-group">
-            <button class="btn-primary btn">
-                sync
-            </button>
-            <button class="btn btn-danger">
-                del
-            </button>
-        </div>
-    </td>
-</tr> */
-
-/*let users = [
-    { id: 1, lastname: "Berger", firstname: "Whitney", age: 22 },
-    { id: 2, lastname: "Nagy", firstname: "Árpád", age: 37 },
-    { id: 3, lastname: "Kiss", firstname: "Pista", age: 25 },
-    { id: 4, lastname: "Jakab", firstname: "Emese", age: 52 },
-    { id: 5, lastname: "Pöttyös", firstname: "Labda", age: 18 },
-];
-*/
 
 getJsonServer();
 let activeModifyRow = false;
@@ -136,9 +111,11 @@ let createTD = (html, parent) => {
     parent.appendChild(td);
 }
 let createButtonGroup = parent => {
+    let group = createAnyElement("div",{class:"btn-group"});
+    /*
     let group = document.createElement("div");
     group.className = "btn-group";
-
+    */
     let btnPrimary = document.createElement("button");
     btnPrimary.className = "btn-primary btn";
     btnPrimary.innerHTML = '<i class="fas fa-sync"></i>';
@@ -154,7 +131,7 @@ let createButtonGroup = parent => {
     td.className = "btnTD";
     td.append(group);
     parent.appendChild(td);
-    addButtonEvent();
+    
 
 }
 
@@ -169,6 +146,7 @@ function updateTable(data) {
         }
         createButtonGroup(tr);
         tableBody.appendChild(tr);
+        addButtonEvent();
     }
     let tr = createAnyElement("tr");
     createInputRow(tr);
@@ -217,7 +195,7 @@ function createAddButton() {
     let td = createAnyElement("td", { name: "addButton" });
     let btn = createAnyElement("button", { class: "btn btn-success" })
     btn.innerHTML = '<i class="fas fa-plus-circle"></i>';
-    btn.style.width = "82px";
+    
     btn.addEventListener("click", addUser);
     td.appendChild(btn);
     return td;
@@ -258,6 +236,7 @@ function closeInputRow() {
     for (button of buttons) {
         removeInputRow(button.parentElement);
         createButtonGroup(button);
+        addButtonEvent();
         button.remove();
     }
 
